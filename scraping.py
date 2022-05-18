@@ -45,7 +45,7 @@ def data_dictionary(browser):
 
         browser.find_by_css('a.product-item img')[i].click()
 
-        #sample_elem = browser.links.find_by_text('Sample').first
+        sample_elem = browser.links.find_by_text('Sample').first
         hemisphere['img_url'] = sample_elem['href']
 
         hemisphere['title'] = browser.find_by_css('h2.title').text
